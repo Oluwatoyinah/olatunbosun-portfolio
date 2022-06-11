@@ -1,0 +1,66 @@
+.experience {
+    min-height: 50vh;
+    background-color: $bgcolor;
+    color: white;
+    padding:  20px 0 30px;
+    h1 {
+        font-family: $curly;
+        font-weight: 900;
+        font-size: 12vw;
+        text-align: right;
+    }
+    h5,h6 {
+        font-style: $italic;
+    }
+    
+    .first {
+        position: relative;
+        // background-color: rgba($color: #303044, $alpha: 0.3);
+        border: 1px solid white;
+        // border-radius: 10px;
+        background-attachment: fixed;
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: -3%;
+            left: -12px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            bottom: -4%;
+            left: -12px;
+        }
+    }
+
+    .work {
+        position: relative;       
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 2px;
+            height: 120%;
+            top: -10%;
+            left: -20px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 7px;
+            height: 2px;
+            top: 20%;
+            left: -20px;
+        }
+    }
+}
+

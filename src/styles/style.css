@@ -1,0 +1,325 @@
+.tools {
+  min-height: 70vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0;
+}
+
+.tools h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+  text-align: right;
+}
+
+.tools .tech img {
+  width: 50%;
+  margin: 12% 25%;
+}
+
+.tools .tech p {
+  font-family: "Oxygen", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .tools {
+    min-height: 40vh;
+  }
+  .tools h1 {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 900;
+    font-size: 12vw;
+    text-align: right;
+  }
+  .tools .tool-icon {
+    font-size: 12vw;
+    color: #cdcccf;
+    margin: 20px;
+  }
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.project {
+  min-height: 50vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0;
+}
+
+.project h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+}
+
+.project .projects-list .box:nth-of-type(even) {
+  margin-left: auto;
+}
+
+.project .projects-list .box {
+  border-top: 3px solid white;
+  color: #cdcdcd;
+}
+
+.project .projects-list .box .name {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 10vw;
+  color: #cdcdcd;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .projects-list .box .name {
+    color: #fff;
+  }
+  .projects-list .box .view a {
+    font-size: 18px;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-family: "Anton", sans-serif;
+  }
+  .projects-list .box .view a i {
+    margin-left: 3px;
+    font-size: 20px;
+  }
+}
+
+.about {
+  min-height: 50vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0;
+}
+
+.about .bosun {
+  width: 90%;
+  margin: auto 5%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid #2679db;
+}
+
+.about h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+}
+
+@media (max-width: 767px) {
+  .about p {
+    text-align: center;
+  }
+  .about .bosun {
+    width: 70%;
+    margin: auto 15%;
+  }
+}
+
+.experience {
+  min-height: 50vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0 30px;
+}
+
+.experience h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+  text-align: right;
+}
+
+.experience h5, .experience h6 {
+  font-style: italic;
+}
+
+.experience .first {
+  position: relative;
+  border: 1px solid white;
+  background-attachment: fixed;
+}
+
+.experience .first::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -3%;
+  left: -12px;
+}
+
+.experience .first::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -4%;
+  left: -12px;
+}
+
+.experience .work {
+  position: relative;
+}
+
+.experience .work::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 120%;
+  top: -10%;
+  left: -20px;
+}
+
+.experience .work::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 7px;
+  height: 2px;
+  top: 20%;
+  left: -20px;
+}
+
+.education {
+  min-height: 20vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0;
+}
+
+.education h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+}
+
+.education h5, .education h6 {
+  font-style: italic;
+}
+
+.education .first {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 0 10px 10px 0;
+}
+
+.education .first::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -10%;
+  left: -12px;
+}
+
+.education .first::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -10%;
+  left: -12px;
+}
+
+.education .work {
+  position: relative;
+}
+
+.education .work::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 120%;
+  top: -10%;
+  left: -20px;
+}
+
+.education .work::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 7px;
+  height: 2px;
+  top: 50%;
+  left: -20px;
+}
+
+.contact {
+  min-height: 50vh;
+  background-color: #00000a;
+  color: white;
+  padding: 20px 0;
+}
+
+.contact h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+  text-align: right;
+}
+
+.contact input[type=text], .contact input[type=email], .contact textarea {
+  font-size: 13px;
+  padding: 10px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  background-color: transparent;
+}
+
+.contact .btn-contact {
+  padding: 8px 30px;
+  background-color: white;
+  color: #00000a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #00000a;
+  font-family: "Oxygen", sans-serif;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  list-style-type: none;
+  padding: 0;
+}
+
+.boundary {
+  background-color: #2679d5;
+  min-height: 5px;
+}
+/*# sourceMappingURL=style.css.map */

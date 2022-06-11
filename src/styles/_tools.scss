@@ -1,0 +1,40 @@
+.tools {
+    min-height: 70vh;
+    background-color: $bgcolor;
+    color: white;
+    padding:  20px 0;
+    h1 {
+        font-family: $curly;
+        font-weight: 900;
+        font-size: 12vw;
+        text-align: right;
+    }
+    .tech {
+        img {
+            width: 50%;
+            margin: 12% 25%;
+        }
+        p {
+            font-family: $oxygen;
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .tools {
+        min-height: 40vh;
+        h1 {
+            font-family: $curly;
+            font-weight: 900;
+            font-size: 12vw;
+            text-align: right;
+        }
+        .tool-icon {
+            font-size: 12vw;
+            color: #cdcccf;
+            margin: 20px;
+        }
+    }  
+}
