@@ -78,6 +78,7 @@ footer a {
   color: transparent;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 .project .projects-list .box .name:hover {
