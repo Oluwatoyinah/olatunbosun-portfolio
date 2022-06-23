@@ -35,29 +35,32 @@
 
 
 @media(max-width: 767px) {
-    .projects-list {
-        .box {
-            // text-align: right;
-            .name {
-                // -webkit-text-stroke: 1px white;
-                letter-spacing: 3px;
-                color: #fff;
+    .project {
+        .projects-list {
+            .box:nth-of-type(even) {
+                text-align: left;
             }
-            .view{
-                a {
-                    font-size: 18px;
-                    text-decoration: underline;
-                    display: block;
-                    margin-bottom: 5px;
-                    color: white;
-                    font-family: $formal;
-                    i {
-                        margin-left: 3px;
-                        font-size: 20px;
+            .box {
+                .name {
+                    letter-spacing: 3px;
+                    // color: #fff;
+                }
+                .view{
+                    a {
+                        font-size: 18px;
+                        text-decoration: underline;
+                        display: block;
+                        margin-bottom: 5px;
+                        color: white;
+                        font-family: $formal;
+                        i {
+                            margin-left: 3px;
+                            font-size: 20px;
+                        }
                     }
                 }
             }
+            
         }
-        
     }
 }

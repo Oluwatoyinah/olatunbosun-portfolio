@@ -80,11 +80,13 @@ footer a {
 }
 
 @media (max-width: 767px) {
-  .projects-list .box .name {
-    letter-spacing: 3px;
-    color: #fff;
+  .project .projects-list .box:nth-of-type(even) {
+    text-align: left;
   }
-  .projects-list .box .view a {
+  .project .projects-list .box .name {
+    letter-spacing: 3px;
+  }
+  .project .projects-list .box .view a {
     font-size: 18px;
     text-decoration: underline;
     display: block;
@@ -92,7 +94,7 @@ footer a {
     color: white;
     font-family: "Anton", sans-serif;
   }
-  .projects-list .box .view a i {
+  .project .projects-list .box .view a i {
     margin-left: 3px;
     font-size: 20px;
   }
