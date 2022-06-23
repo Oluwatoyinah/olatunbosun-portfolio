@@ -1,12 +1,8 @@
 .tools {
-    min-height: 70vh;
-    background-color: $bgcolor;
-    color: white;
+    min-height: 70vh; 
     padding:  20px 0;
     h1 {
-        font-family: $curly;
-        font-weight: 900;
-        font-size: 12vw;
+        @extend %title-style;
         text-align: right;
     }
     .tech {

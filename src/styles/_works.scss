@@ -1,12 +1,8 @@
 .experience {
-    min-height: 50vh;
-    background-color: $bgcolor;
-    color: white;
+    min-height: 50vh; 
     padding:  20px 0 30px;
     h1 {
-        font-family: $curly;
-        font-weight: 900;
-        font-size: 12vw;
+         @extend %title-style;
         text-align: right;
     }
     h5,h6 {
@@ -16,13 +12,13 @@
     .first {
         position: relative;
         // background-color: rgba($color: #303044, $alpha: 0.3);
-        border: 1px solid white;
+        border: 1px solid set-text-color($bgcolor); 
         // border-radius: 10px;
         background-attachment: fixed;
         &::after {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -32,7 +28,7 @@
         &::before {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -46,7 +42,7 @@
         &::after {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 2px;
             height: 120%;
             top: -10%;
@@ -55,7 +51,7 @@
         &::before {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 7px;
             height: 2px;
             top: 20%;

@@ -1,39 +1,30 @@
-
-
 .project {
-    min-height: 50vh;
-    background-color: $bgcolor;
-    color: white;
+    min-height: 50vh; 
     padding:  20px 0;
     h1 {
-        font-family: $curly;
-        font-weight: 900;
-        font-size: 12vw;
+         @extend %title-style;
     }
     .projects-list {
         .box:nth-of-type(even) {
-            margin-left: auto;
+            text-align: right;
         }
         .box {
-            border-top: 3px solid white;
-            color: #cdcdcd;
-            // text-align: right;
+            border-top: 3px solid set-text-color($bgcolor);
+            color: #cdcdcd; 
             .name {
                 text-transform: uppercase;
                 text-decoration: none;
                 font-family: $formal;
-                font-size : 10vw;
-                // color: #cdcdcd;
-                // font-weight: bold;
-                -webkit-text-stroke: 2px white;
-                text-stroke: 1px white;
+                font-size : 10vw; 
+                -webkit-text-stroke: 2px set-text-color($bgcolor);
+                text-stroke: 1px set-text-color($bgcolor);
                 color: transparent;
                 transition: 0.3s ease-in;
                 cursor: pointer;
                 &:hover {
-                    -webkit-text-stroke: 2px white;
-                    text-stroke: 1px white;
-                    color: white;
+                    -webkit-text-stroke: 2px set-text-color($bgcolor);
+                    text-stroke: 1px set-text-color($bgcolor);
+                    color: set-text-color($bgcolor);
                 }
             }
         }

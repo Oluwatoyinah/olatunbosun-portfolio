@@ -1,14 +1,15 @@
+.tools h1, .project h1, .about h1, .experience h1, .education h1, .contact h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-size: 12vw;
+}
+
 .tools {
   min-height: 70vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0;
 }
 
 .tools h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
   text-align: right;
 }
 
@@ -39,32 +40,24 @@
 }
 
 footer {
-  color: white;
+  color: #cdcdcd;
 }
 
 footer a {
-  color: white;
+  color: #cdcdcd;
 }
 
 .project {
   min-height: 50vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0;
 }
 
-.project h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
-}
-
 .project .projects-list .box:nth-of-type(even) {
-  margin-left: auto;
+  text-align: right;
 }
 
 .project .projects-list .box {
-  border-top: 3px solid white;
+  border-top: 3px solid #cdcdcd;
   color: #cdcdcd;
 }
 
@@ -73,18 +66,17 @@ footer a {
   text-decoration: none;
   font-family: "Anton", sans-serif;
   font-size: 10vw;
-  -webkit-text-stroke: 2px white;
-  text-stroke: 1px white;
+  -webkit-text-stroke: 2px #cdcdcd;
+  text-stroke: 1px #cdcdcd;
   color: transparent;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 
 .project .projects-list .box .name:hover {
-  -webkit-text-stroke: 2px white;
-  text-stroke: 1px white;
-  color: white;
+  -webkit-text-stroke: 2px #cdcdcd;
+  text-stroke: 1px #cdcdcd;
+  color: #cdcdcd;
 }
 
 @media (max-width: 767px) {
@@ -108,8 +100,6 @@ footer a {
 
 .about {
   min-height: 50vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0;
 }
 
@@ -118,13 +108,7 @@ footer a {
   margin: auto 5%;
   max-width: 100%;
   border-radius: 50%;
-  border: 4px solid white;
-}
-
-.about h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
+  border: 4px solid #cdcdcd;
 }
 
 @media (max-width: 767px) {
@@ -139,15 +123,10 @@ footer a {
 
 .experience {
   min-height: 50vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0 30px;
 }
 
 .experience h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
   text-align: right;
 }
 
@@ -157,14 +136,14 @@ footer a {
 
 .experience .first {
   position: relative;
-  border: 1px solid white;
+  border: 1px solid #cdcdcd;
   background-attachment: fixed;
 }
 
 .experience .first::after {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -175,7 +154,7 @@ footer a {
 .experience .first::before {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -190,7 +169,7 @@ footer a {
 .experience .work::after {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 2px;
   height: 120%;
   top: -10%;
@@ -200,7 +179,7 @@ footer a {
 .experience .work::before {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 7px;
   height: 2px;
   top: 20%;
@@ -209,15 +188,7 @@ footer a {
 
 .education {
   min-height: 20vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0;
-}
-
-.education h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
 }
 
 .education h5, .education h6 {
@@ -226,14 +197,14 @@ footer a {
 
 .education .first {
   position: relative;
-  border: 1px solid white;
+  border: 1px solid #cdcdcd;
   border-radius: 0 10px 10px 0;
 }
 
 .education .first::after {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -244,7 +215,7 @@ footer a {
 .education .first::before {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -259,7 +230,7 @@ footer a {
 .education .work::after {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 2px;
   height: 120%;
   top: -10%;
@@ -269,7 +240,7 @@ footer a {
 .education .work::before {
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: #cdcdcd;
   width: 7px;
   height: 2px;
   top: 50%;
@@ -278,41 +249,22 @@ footer a {
 
 .contact {
   min-height: 50vh;
-  background-color: #00000a;
-  color: white;
   padding: 20px 0;
 }
 
 .contact h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-weight: 900;
-  font-size: 12vw;
   text-align: right;
-}
-
-.contact input[type=text], .contact input[type=email], .contact textarea {
-  font-size: 13px;
-  padding: 10px;
-  border: 1px solid #FFF;
-  color: #FFF;
-  background-color: transparent;
-}
-
-.contact .btn-contact {
-  padding: 8px 30px;
-  background-color: white;
-  color: #00000a;
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #00000a;
+  color: #cdcdcd;
   font-family: "Oxygen", sans-serif;
   overflow-x: hidden;
 }
@@ -330,7 +282,7 @@ h6 {
 }
 
 .boundary {
-  background-color: #2679d5;
+  background-color: #cdcdcd;
   min-height: 5px;
 }
 /*# sourceMappingURL=style.css.map */

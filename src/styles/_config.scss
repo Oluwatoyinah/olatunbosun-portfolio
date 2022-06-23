@@ -1,0 +1,36 @@
+
+// $bgcolor : #00000a;
+$bgcolor: #00000a;
+$curly : 'Qwitcher Grypen', cursive;
+$italic : italic;
+$formal : 'Anton', sans-serif;
+$oxygen : 'Oxygen', sans-serif;
+$blueColor : #2679d5;
+$fontColor : #fff;
+
+
+
+// Inherited style
+%title-style {
+    font-family: $curly;
+    font-weight: 900;
+    font-size: 12vw;
+}
+
+//set text color based on bg
+@function set-text-color($color) {
+    @if($color == #00000a) {
+        @return #cdcdcd;
+    } @else if ($color == #eee) {
+        @return #00000a;
+    }  @else if ($color == #2679d5) {
+        @return #fff;
+    } 
+}
+
+
+//set colors
+@mixin set-colors($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}

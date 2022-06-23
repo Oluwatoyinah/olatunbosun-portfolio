@@ -1,4 +1,4 @@
-@import './variables';
+@import './config';
 @import './tools';
 @import './footer';
 @import './project';
@@ -15,9 +15,9 @@
 
 
 body {
-    background-color: $bgcolor;
+    @include set-colors($bgcolor)
     font-family: $oxygen; 
-    overflow-x: hidden;
+    overflow-x: hidden;  
 }
 
 ul,
@@ -34,6 +34,8 @@ h6 {
 
 
 .boundary {
-    background-color: $blueColor;
+    background-color: set-text-color($bgcolor);
     min-height: 5px;
 }
+
+

@@ -1,13 +1,9 @@
 
 .education {
-    min-height: 20vh;
-    background-color: $bgcolor;
-    color: white;
+    min-height: 20vh; 
     padding:  20px 0;
     h1 {
-        font-family: $curly;
-        font-weight: 900;
-        font-size: 12vw;
+        @extend %title-style
     }
     h5,h6 {
         font-style: $italic;
@@ -15,12 +11,12 @@
     .first {
         position: relative;
         // background-color: rgba($color: #303044, $alpha: 0.4);
-        border: 1px solid white;
+        border: 1px solid set-text-color($bgcolor);
         border-radius: 0 10px 10px 0;
         &::after {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -30,7 +26,7 @@
         &::before {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -44,7 +40,7 @@
         &::after {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 2px;
             height: 120%;
             top: -10%;
@@ -53,7 +49,7 @@
         &::before {
             content: '';
             position: absolute;
-            background-color: white;
+            background-color: set-text-color($bgcolor);
             width: 7px;
             height: 2px;
             top: 50%;

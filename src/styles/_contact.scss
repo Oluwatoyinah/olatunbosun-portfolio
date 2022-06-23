@@ -1,26 +1,8 @@
 .contact {
-    min-height: 50vh;
-    background-color: $bgcolor;
-    color: white;
+    min-height: 50vh; 
     padding:  20px 0;
     h1 {
-        font-family: $curly;
-        font-weight: 900;
-        font-size: 12vw;
+        @extend %title-style;
         text-align: right;
-    }
-
-    input[type=text] , input[type=email], textarea{
-        font-size: 13px;
-        padding: 10px;
-        border: 1px solid #FFF;
-        color: #FFF; 
-        background-color: transparent;
-    
-    }
-    .btn-contact {
-        padding: 8px 30px;
-        background-color: white;
-        color: #00000a;
-    }
+    } 
 }
