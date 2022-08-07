@@ -22,7 +22,7 @@ $fontColor : #fff;
     @if($color == #00000a) {
         @return #cdcdcd;
     } @else if ($color == #eee) {
-        @return #00000a;
+        @return #00000a;   
     }  @else if ($color == #2679d5) {
         @return #fff;
     } 
