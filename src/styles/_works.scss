@@ -12,7 +12,7 @@
     .first {
         position: relative; 
         // background-color: rgba($color: #303044, $alpha: 0.3);
-        border: 1px solid set-text-color($bgcolor); 
+        // border: 1px solid set-text-color($bgcolor); 
         // border-radius: 10px; 
         
         &::after {
@@ -51,9 +51,11 @@
         &::before {
             content: '';
             position: absolute;
-            background-color: set-text-color($bgcolor);
-            width: 7px;
-            height: 2px;
+            background-color: transparent;
+            width: 20px;
+            height: 20px;
+            border-bottom: 3px solid set-text-color($bgcolor);
+            // border-right: 3px solid set-text-color($bgcolor);
             top: 20%;
             left: -20px;
         }

@@ -124,7 +124,6 @@ footer a {
 }
 .experience .first {
   position: relative;
-  border: 1px solid #cdcdcd;
 }
 .experience .first::after {
   content: "";
@@ -161,9 +160,10 @@ footer a {
 .experience .work::before {
   content: "";
   position: absolute;
-  background-color: #cdcdcd;
-  width: 7px;
-  height: 2px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid #cdcdcd;
   top: 20%;
   left: -20px;
 }
@@ -177,7 +177,6 @@ footer a {
 }
 .education .first {
   position: relative;
-  border: 1px solid #cdcdcd;
   border-radius: 0 10px 10px 0;
 }
 .education .first::after {
@@ -215,10 +214,11 @@ footer a {
 .education .work::before {
   content: "";
   position: absolute;
-  background-color: #cdcdcd;
-  width: 7px;
-  height: 2px;
-  top: 50%;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #cdcdcd;
+  top: 40%;
   left: -20px;
 }
 
