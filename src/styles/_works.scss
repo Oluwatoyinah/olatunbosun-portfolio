@@ -1,6 +1,6 @@
 .experience {
     min-height: 50vh; 
-    padding:  20px 0 30px;
+    padding:  20px 0;
     h1 {
          @extend %title-style;
         text-align: right;
@@ -10,11 +10,11 @@
     }
     
     .first {
-        position: relative;
+        position: relative; 
         // background-color: rgba($color: #303044, $alpha: 0.3);
         border: 1px solid set-text-color($bgcolor); 
-        // border-radius: 10px;
-        background-attachment: fixed;
+        // border-radius: 10px; 
+        
         &::after {
             content: '';
             position: absolute;

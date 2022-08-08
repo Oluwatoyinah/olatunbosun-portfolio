@@ -1,23 +1,25 @@
-.tools h1, .project h1, .about h1, .experience h1, .education h1, .contact h1 {
+.contact h1, .education h1, .experience h1, .about h1, .project h1, .tools h1 {
   font-family: "Qwitcher Grypen", cursive;
   font-weight: 900;
   font-size: 12vw;
 }
 
+@media (max-width: 768px) {
+  .contact h1, .education h1, .experience h1, .about h1, .project h1, .tools h1 {
+    font-size: 18vw;
+  }
+}
 .tools {
   min-height: 70vh;
   padding: 20px 0;
 }
-
 .tools h1 {
   text-align: right;
 }
-
 .tools .tech img {
   width: 50%;
   margin: 12% 25%;
 }
-
 .tools .tech p {
   font-family: "Oxygen", sans-serif;
 }
@@ -26,23 +28,15 @@
   .tools {
     min-height: 40vh;
   }
-  .tools h1 {
-    font-family: "Qwitcher Grypen", cursive;
-    font-weight: 900;
-    font-size: 12vw;
-    text-align: right;
-  }
   .tools .tool-icon {
     font-size: 12vw;
     color: #cdcccf;
     margin: 20px;
   }
 }
-
 footer {
   color: #cdcdcd;
 }
-
 footer a {
   color: #cdcdcd;
 }
@@ -51,16 +45,16 @@ footer a {
   min-height: 50vh;
   padding: 20px 0;
 }
-
+.project h1 {
+  text-align: right;
+}
 .project .projects-list .box:nth-of-type(even) {
   text-align: right;
 }
-
 .project .projects-list .box {
   border-top: 3px solid #cdcdcd;
   color: #cdcdcd;
 }
-
 .project .projects-list .box .name {
   text-transform: uppercase;
   text-decoration: none;
@@ -72,7 +66,6 @@ footer a {
   transition: 0.3s ease-in;
   cursor: pointer;
 }
-
 .project .projects-list .box .name:hover {
   -webkit-text-stroke: 2px #cdcdcd;
   text-stroke: 1px #cdcdcd;
@@ -99,12 +92,10 @@ footer a {
     font-size: 20px;
   }
 }
-
 .about {
   min-height: 50vh;
   padding: 20px 0;
 }
-
 .about .bosun {
   width: 90%;
   margin: auto 5%;
@@ -112,7 +103,6 @@ footer a {
   border-radius: 50%;
   border: 4px solid #cdcdcd;
 }
-
 @media (max-width: 767px) {
   .about p {
     text-align: center;
@@ -122,28 +112,22 @@ footer a {
     margin: auto 15%;
   }
 }
-
 .experience {
   min-height: 50vh;
-  padding: 20px 0 30px;
+  padding: 20px 0;
 }
-
 .experience h1 {
   text-align: right;
 }
-
 .experience h5, .experience h6 {
   font-style: italic;
 }
-
 .experience .first {
   position: relative;
   border: 1px solid #cdcdcd;
-  background-attachment: fixed;
 }
-
 .experience .first::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 10px;
@@ -152,9 +136,8 @@ footer a {
   top: -3%;
   left: -12px;
 }
-
 .experience .first::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 10px;
@@ -163,13 +146,11 @@ footer a {
   bottom: -4%;
   left: -12px;
 }
-
 .experience .work {
   position: relative;
 }
-
 .experience .work::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 2px;
@@ -177,9 +158,8 @@ footer a {
   top: -10%;
   left: -20px;
 }
-
 .experience .work::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 7px;
@@ -192,19 +172,16 @@ footer a {
   min-height: 20vh;
   padding: 20px 0;
 }
-
 .education h5, .education h6 {
   font-style: italic;
 }
-
 .education .first {
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 0 10px 10px 0;
 }
-
 .education .first::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 10px;
@@ -213,9 +190,8 @@ footer a {
   top: -10%;
   left: -12px;
 }
-
 .education .first::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 10px;
@@ -224,13 +200,11 @@ footer a {
   bottom: -10%;
   left: -12px;
 }
-
 .education .work {
   position: relative;
 }
-
 .education .work::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 2px;
@@ -238,9 +212,8 @@ footer a {
   top: -10%;
   left: -20px;
 }
-
 .education .work::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #cdcdcd;
   width: 7px;
@@ -251,13 +224,32 @@ footer a {
 
 .contact {
   min-height: 50vh;
-  padding: 20px 0;
+  padding: 50px 0 20px;
 }
-
+.contact .star {
+  width: 70px;
+  animation: starSpin 2s infinite ease-in-out;
+}
 .contact h1 {
-  text-align: right;
+  text-align: center;
+}
+.contact h6 {
+  color: rgb(94, 91, 91);
 }
 
+@keyframes starSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 576px) {
+  .contact .star {
+    width: 30px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -286,5 +278,4 @@ h6 {
 .boundary {
   background-color: #cdcdcd;
   min-height: 5px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

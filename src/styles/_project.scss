@@ -3,6 +3,7 @@
     padding:  20px 0;
     h1 {
          @extend %title-style;
+         text-align: right;
     }
     .projects-list {
         .box:nth-of-type(even) {

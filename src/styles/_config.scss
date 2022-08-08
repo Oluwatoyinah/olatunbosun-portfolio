@@ -28,9 +28,15 @@ $fontColor : #fff;
     } 
 }
 
-
 //set colors
 @mixin set-colors($color) {
     background-color: $color;
     color: set-text-color($color);
+}
+
+@media (max-width: 768px) {
+    %title-style { 
+        font-size: 18vw; 
+    }
+    
 }

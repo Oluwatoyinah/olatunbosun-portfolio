@@ -1,8 +1,34 @@
 .contact {
     min-height: 50vh; 
-    padding:  20px 0;
+    padding:  50px 0 20px;
+    .star {
+        width: 70px;
+        animation: starSpin 2s infinite ease-in-out;
+        // delay iteration-count direction fill-mode;
+    }
     h1 {
         @extend %title-style;
-        text-align: right;
+        text-align: center;
     } 
+    h6 {
+        color: rgb(94, 91, 91);
+    }
+}
+
+@keyframes starSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width : 576px) {
+    .contact {
+        .star {
+            width: 30px;
+        }
+    }
 }
