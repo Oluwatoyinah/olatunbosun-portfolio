@@ -59,7 +59,7 @@ footer a {
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Anton", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   -webkit-text-stroke: 2px #cdcdcd;
   text-stroke: 1px #cdcdcd;
   color: transparent;
@@ -132,7 +132,7 @@ footer a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  top: -3%;
+  top: -2%;
   left: -12px;
 }
 .experience .first::before {
@@ -142,7 +142,7 @@ footer a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  bottom: -4%;
+  bottom: -2%;
   left: -12px;
 }
 .experience .work {
@@ -233,6 +233,9 @@ footer a {
 .contact h1 {
   text-align: center;
 }
+.contact h2 a {
+  color: #cdcdcd;
+}
 .contact h6 {
   color: rgb(94, 91, 91);
 }
@@ -278,4 +281,8 @@ h6 {
 .boundary {
   background-color: #cdcdcd;
   min-height: 5px;
+}
+
+.tx-bl {
+  color: rgb(241, 238, 238);
 }/*# sourceMappingURL=style.css.map */

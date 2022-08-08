@@ -16,14 +16,14 @@ const Contact = () => {
         <div className='mt-5'>
           <div className='mb-3'>
             <h6 className="fw-bold mb-0">EMAIL</h6>
-            <h2>holarthunbhosun@gmail.com</h2> 
+            <h2><a href="mailto:holarthunbhosun@gmail.com">holarthunbhosun@gmail.com</a></h2> 
           </div>
           <hr />
           <div className='mt-4'>
             <h6 className="fw-bold mb-0">CONNECT</h6>
             <div className="d-flex gap-5 mb-5">
-                <h2 className='text-decoration-underline'>Github</h2>
-                <h2 className='text-decoration-underline'>Twitter</h2>
+              <h2><a href="https://github.com/horlathunbhosun">Github</a></h2>
+              <h2><a href="https://github.com/horlathunbhosun">Twitter</a></h2>
             </div>
           </div> 
         </div>
