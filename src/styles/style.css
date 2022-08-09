@@ -49,9 +49,6 @@ footer a {
 .project h1 {
   text-align: right;
 }
-.project .projects-list .box:nth-of-type(even) {
-  text-align: right;
-}
 .project .projects-list .box {
   border-top: 3px solid #cdcdcd;
   color: #cdcdcd;
@@ -71,6 +68,7 @@ footer a {
   -webkit-text-stroke: 2px #cdcdcd;
   text-stroke: 1px #cdcdcd;
   color: #cdcdcd;
+  padding-left: 30px;
 }
 
 @media (max-width: 767px) {
@@ -79,6 +77,9 @@ footer a {
   }
   .project .projects-list .box .name {
     letter-spacing: 3px;
+  }
+  .project .projects-list .box .name:hover {
+    padding-left: 0;
   }
   .project .projects-list .box .view a {
     font-size: 18px;
@@ -165,7 +166,7 @@ footer a {
   width: 20px;
   height: 20px;
   border-bottom: 3px solid #cdcdcd;
-  top: 20%;
+  top: 8%;
   left: -20px;
 }
 

@@ -5,7 +5,7 @@ const Education = () => {
     <section class="container-fluid education">
     <div class="container">
       <div class="row">
-        <h1 class="reveal">.educational history</h1>
+        <h1 class="reveal">.education</h1>
         <div class="col-md-3"></div>
         <div class="col-md-9 col-11 mx-auto first">
           <div class="work p-3">

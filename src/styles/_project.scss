@@ -6,9 +6,9 @@
          text-align: right;
     }
     .projects-list {
-        .box:nth-of-type(even) {
-            text-align: right;
-        }
+        // .box:nth-of-type(even) {
+        //     text-align: right;
+        // }
         .box {
             border-top: 3px solid set-text-color($bgcolor);
             color: #cdcdcd; 
@@ -26,6 +26,7 @@
                     -webkit-text-stroke: 2px set-text-color($bgcolor);
                     text-stroke: 1px set-text-color($bgcolor);
                     color: set-text-color($bgcolor);
+                    padding-left: 30px;
                 }
             }
         }
@@ -45,6 +46,9 @@
                 .name {
                     letter-spacing: 3px;
                     // color: #fff;
+                    &:hover {
+                        padding-left: 0;
+                    }
                 }
                 .view{
                     a {

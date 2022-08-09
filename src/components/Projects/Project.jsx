@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 const Project = (props) => {
   return (
     <div className="py-2 box">
-            <div className="col-md-9">
+            <div className="col-md-12">
               <a href='' className='name'>{props.projectname}</a>
               <p className="d-md-none">{props.projectDetails}</p>
               <div className="d-md-none view">
