@@ -1,5 +1,5 @@
 import React from 'react';
-import Bosun from '../assets/Bosun_nanmbl.png';
+import Bosun from '../assets/me.jpg';
 
 const About = () => {
   return (
@@ -9,10 +9,10 @@ const About = () => {
                 <h1 className="col-md-12">.about me</h1>
 
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 bosun-box">
                         <img src={Bosun} className="bosun" alt="A picture will be here" />
                     </div>
-                    <div className="col-md-8 py-3" style={{display: "grid", placeContent: "center"}}>
+                    <div className="col-lg-8 py-3" style={{display: "grid", placeContent: "center"}}>
                         {/* <p className="">Hi, I'm Olulode Olatunbosun. I am a software Developer from Nigeria. Passionate Fullstack
                             Developer with 3+ years experience developing web applications and API using php (Laravel/Codeigniter),
                             Javascript, Nodejs and Wordpress. Looking to join your deployment team where my skills will be utilized
